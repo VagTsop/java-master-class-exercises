@@ -6,7 +6,7 @@ public class SharedDigit {
         System.out.println(hasSharedDigit(9, 99)); // should return false since 9 is not within the range of 10
         System.out.println(hasSharedDigit(15, 55)); // should return true since the digit 5 appears in both numbers
         System.out.println(hasSharedDigit(100, 10)); // should return false
-    }
+    }// co
 
 
     public static boolean hasSharedDigit(int numberValueOne, int numberValueTwo) {
