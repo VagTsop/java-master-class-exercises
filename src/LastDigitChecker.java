@@ -14,6 +14,7 @@ public class LastDigitChecker {
         System.out.println(isValid(468)); // should return true since 468 is in the range of 10 - 1000
         System.out.println(isValid(1051)); // should return false since 1051 is not in the range of 10 - 1000
 
+
     }
 
 
