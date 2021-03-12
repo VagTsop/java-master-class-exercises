@@ -3,8 +3,6 @@
 public class PrintMegaBytes {
 
     public static void main(String args[]) {
-
-
         printMegaBytesAndKiloBytes(50000);
     }
 
@@ -12,7 +10,7 @@ public class PrintMegaBytes {
         if (kiloBytes >= 0) {
             int megaBytes = kiloBytes / 1024;
             int remainingKiloBytes = kiloBytes % 1024;
-            System.out.println(kiloBytes + "KB = " + megaBytes + "MB and "  + remainingKiloBytes + "KB");
+            System.out.println(kiloBytes + "KB = " + megaBytes + "MB and " + remainingKiloBytes + "KB");
         } else {
             System.out.println("Invalid Value");
         }

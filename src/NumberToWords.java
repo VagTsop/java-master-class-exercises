@@ -1,24 +1,18 @@
 public class NumberToWords {
 
     public static void main(String args[]) {
-
         System.out.println(getDigitCount(0));    // should return 1 since there is only one digit
         System.out.println(getDigitCount(123));  // should return 3
         System.out.println(getDigitCount(-12));  // should return -1 since the parameter is negative
         System.out.println(getDigitCount(5200)); // should return 4 since there are 4 digits in the number
-
-
         System.out.println(reverse(-121));  // should return -121
         System.out.println(reverse(1212));  // should return 2121
         System.out.println(reverse(1234));  // should return 4321
         System.out.println(reverse(100));   // should return 1
-
         numberToWords(123);  // should print "One Two Three"
         numberToWords(1010);  // should print "One Zero One Zero"
         numberToWords(1000);  // should print "One Zero Zero Zero"
         numberToWords(-12);  // should print "Invalid Value"
-
-
     }
 
     public static void numberToWords(int number) {
@@ -26,12 +20,10 @@ public class NumberToWords {
             System.out.println("Invalid Value");
             return;
         }
-
         StringBuilder word = new StringBuilder();
         int digit;
         int reverseNumber = reverse(number);
         int numberOfZeroes = getDigitCount(number) - getDigitCount(reverseNumber);
-
         do {
             digit = reverseNumber % 10;
             switch (digit) {
@@ -68,7 +60,6 @@ public class NumberToWords {
             word.append("\n");
             reverseNumber /= 10;
         } while (reverseNumber > 0);
-
         for (int i = 0; i < numberOfZeroes; i++) {
             word.append("Zero\n");
         }
@@ -88,7 +79,6 @@ public class NumberToWords {
         if (number < 0) {
             return -1;
         }
-
         int count = 0;
         do {
             count++;
@@ -97,6 +87,3 @@ public class NumberToWords {
         return count;
     }
 }
-
-
-
