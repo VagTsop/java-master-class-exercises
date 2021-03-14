@@ -1,0 +1,23 @@
+package com.example.masterclass.wallarea;
+
+public class main {
+
+    public static void main(String[] args) {
+        Wall wall = new Wall(5, 4);
+        System.out.println("area= " + wall.getArea());
+
+        wall.setHeight(-1.5);
+        System.out.println("width= " + wall.getWidth());
+        System.out.println("height= " + wall.getHeight());
+        System.out.println("area= " + wall.getArea());
+
+//        wall.setHeight(-1);
+//        wall.setWidth(-1);
+//        System.out.println(wall.getHeight());
+//        System.out.println(wall.getWidth());
+
+
+    }
+
+
+}
